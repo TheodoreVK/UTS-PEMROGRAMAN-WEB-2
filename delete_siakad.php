@@ -12,7 +12,7 @@ $sql = "DROP DATABASE IF EXISTS siakad";
 if ($conn->query($sql) === TRUE) {
     echo "Database siakad berhasil dihapus";
 } else {
-    echo "Error dropping database: " . $conn->error;
+    echo "Database gagal dihapus: " . $conn->error;
 }
 $conn->close();
 ?>
